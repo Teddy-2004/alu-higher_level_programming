@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 number = 3.14159
-nu = round(number, 2)
-print(f"Float: {nu}")
+print(f"Float: {number:.2f}")
