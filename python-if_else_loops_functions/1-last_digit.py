@@ -10,7 +10,7 @@ if number < 0:
     print("Last digit of {:d} is ".format(number), end='')
 
 if lastdigit == 0:
-    print("{:d} and is 0".format(lastdigit))
+    print("Last digit of {:d} and is 0".format(lastdigit))
 
 elif lastdigit > 5:
     print("{:d} and is greater than 5".format(lastdigit))
