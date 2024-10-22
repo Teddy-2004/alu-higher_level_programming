@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import add
-def __add__():
+def main():
     print("1 + 2 = ", add.add(1, 2))
 
-__add__()
+if __name__ == "__main__":
+    main()
+
