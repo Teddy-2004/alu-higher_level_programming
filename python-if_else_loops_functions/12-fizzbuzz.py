@@ -7,6 +7,3 @@ def fizzbuzz(i):
             print("Buzz ", end="")
         else:
             print(f"{i} ", end="")
-        
-
-fizzbuzz(9)
