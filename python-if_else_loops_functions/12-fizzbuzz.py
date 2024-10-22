@@ -7,3 +7,4 @@ def fizzbuzz(i):
             print("Buzz ", end="")
         else:
             print(f"{i} ", end="")
+        return i
