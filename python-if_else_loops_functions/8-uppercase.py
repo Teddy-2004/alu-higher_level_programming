@@ -7,5 +7,3 @@ def uppercase(str):
             i = ord(s)
         print("{:c}".format(i), end='')
     print("")
-
-uppercase
