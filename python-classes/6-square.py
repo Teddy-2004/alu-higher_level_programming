@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-"""added getter and setter"""
-
+"""class creation"""
 
 class Square:
-    """added getter and setter"""
-    def __init__(self, size=0):
+    """class document"""
+    def __init__(self, size=0, position=(0, 0)):
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-
-    def area(self):
-        return self.__size ** 2
+        self.__position = position
 
     @property
     def size(self):
@@ -26,19 +23,11 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    def my_print(self):
-        if self.__size == 0:
-            print()
-        for i in range(self.__size):
-            for j in range(self.__size):
-                print("#", end="")
-            print()
-
     @property
     def position(self):
         return self.__position
-    
-    @size.setter
+
+    @position.setter
     def position(self, value):
         errMsg = TypeError("position must be a tuple of 2 positive integers")
 
@@ -48,4 +37,22 @@ class Square:
             raise errMsg
         elif value[0] < 0 or value[1] < 0:
             raise errMsg
-        self.__size = value
+
+        self.__position = value
+
+    def area(self):
+        return self.__size ** 2
+
+    def my_print(self):
+        printSize = self.__size
+        if printSize == 0:
+            print()
+        else:
+            for y in range(self.__position[1]):
+                print()
+            for i in range(printSize):
+                for x in range(self.__position[0]):
+                    print(" ", end="")
+                for j in range(printSize):
+                    print("#", end="")
+                print()
