@@ -49,4 +49,3 @@ class Square:
         elif value[0] < 0 or value[1] < 0:
             raise errMsg
         self.__size = value
-        
