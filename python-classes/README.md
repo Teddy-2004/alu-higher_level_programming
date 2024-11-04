@@ -1,0 +1,1 @@
+This project is about classes. In this project there are tasks that examine the knowladge of class concepts including attributem, method, object, inheritance, polymorphism, encapsulation and many more.
