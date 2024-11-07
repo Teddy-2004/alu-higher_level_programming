@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-checks if the object is an instance of a class 
+checks if the object is an instance of a class
 """
 
 
