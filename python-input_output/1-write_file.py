@@ -5,7 +5,9 @@ Program that counts lines in a file
 
 
 def number_of_lines(filename=""):
-    """ count lines in file """
+    """
+    count lines in file
+    """
     count = 0
     if filename == "":
         return count
