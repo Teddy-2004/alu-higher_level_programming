@@ -4,7 +4,7 @@ Program that counts lines in a file
 """
 
 
-def number_of_lines(filename=""):
+def write_file(filename="", text=""):
     """
     count lines in file
     """
