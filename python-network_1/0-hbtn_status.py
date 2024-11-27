@@ -17,3 +17,15 @@ if __name__ == '__main__':
         print("\t- type: {}".format(type(content)))
         print("\t- content: {}".format(content))
         print("\t- utf8 content: {}".format(content.decode('utf-8')))
+
+
+# import urllib.request
+
+# if __name__ == "__main__":
+#     url = "https://alu-intranet.hbtn.io/status"
+#     with urllib.request.urlopen(url) as request:
+#         print("Body response:")
+#         data = request.read()
+#         print("\t- type: {}".format(type(data)))
+#         print("\t- content: {}".format(data))
+#         print("\t- utf8 content: {}".format(data.decode("utf-8")))
