@@ -1,38 +1,20 @@
->>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> print_square = __import__('4-print_square').print_square
 
+>>> print_square(2)
+##
+##
 
->>> matrix_divided([[1, 2, 3], [4, 5, 6]], 3)
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
-
->>> matrix_divided([[1, 2, 3], [4, 5, 6]], "3")
+>>> print_square("2")
 Traceback (most recent call last):
     ...
-TypeError: div must be a number
+TypeError: size must be an integer
 
->>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0)
+>>> print_square(-5)
 Traceback (most recent call last):
     ...
-ZeroDivisionError: division by zero
+ValueError: size must be >= 0
 
->>> matrix_divided([[1, True, 3], [4, 5, "string"]], 0)
+>>> print_square()
 Traceback (most recent call last):
     ...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
-
->>> matrix_divided([[1, 3, 5], [4, 5]], 0)
-Traceback (most recent call last):
-    ...
-TypeError: Each row of the matrix must have the same size
-
->>> matrix_divided([[1, 2, 3], [4, 5, 6]], float("inf"))
-[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
-
->>> matrix_divided([[1, 2], [3, 4]])
-Traceback (most recent call last):
-    ...
-TypeError: matrix_divided() missing 1 required positional argument: 'div'
-
->>> matrix_divided()
-Traceback (most recent call last):
-    ...
-TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+TypeError: print_square() missing 1 required positional argument: 'size'
