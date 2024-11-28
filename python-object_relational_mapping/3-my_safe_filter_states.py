@@ -24,8 +24,9 @@ if __name__ == "__main__":
     )
     cur = conn.cursor()
     cur.execute(
-        "SELECT * FROM states WHERE name = BINARY '{}'\
-         ORDER BY id".format(search)
+        "SELECT * FROM states WHERE name = BINARY %s\
+        ORDER BY id",
+        [search]
     )
     query_rows = cur.fetchall()
     for row in query_rows:
